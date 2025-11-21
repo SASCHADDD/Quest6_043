@@ -96,18 +96,18 @@ fun Form(
                     color = Color.Red
                 )
                 OutlinedTextField(
-                    value = "",
+                    value = txtAlamat,
                     singleLine = true,
                     modifier = Modifier
                         .width(250.dp),
                     label = { Text(text = "Alamat") },
-                    onValueChange = {},
+                    onValueChange = {txtAlamat = it},
                 )
                 Spacer(modifier = Modifier.height(30.dp))
                 Button(
                     modifier = Modifier.fillMaxWidth(1f)
                         .padding(all = 25.dp),
-                    onClick = OnsubmitBtnClick
+                    onClick = {OnsubmitBtnClick(listData)}
                 ) {
                     Text(stringResource(R.string.submit))
                 }
