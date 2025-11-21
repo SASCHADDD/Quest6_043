@@ -1,4 +1,4 @@
-package com.example.pertemuan8
+package com.example.pertemuan8.view.uicontroller
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
